@@ -19,9 +19,9 @@ public class NioTest {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws Exception {
-		// test1();
-		// test2();
-		// test3();
+		test1();
+		test2();
+		test3();
 		System.out.println(Integer.MAX_VALUE);
 		System.out.println(Integer.MIN_VALUE);
 		System.out.println(ByteOrder.BIG_ENDIAN);

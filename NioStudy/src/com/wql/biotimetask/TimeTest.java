@@ -15,7 +15,7 @@ public class TimeTest {
 		// TODO Auto-generated method stub
 		new Thread(new Runnable() {
 			public void run() {
-				new TimeServer().main(null);
+				TimeServer.main(null);
 			}
 		}).start();
 		try {
@@ -25,7 +25,7 @@ public class TimeTest {
 		}
 		long t1 = new Date().getTime();
 		for (int i = 0; i < 1000; i++) {
-			new TimeClient().main(null);
+			TimeClient.main(null);
 		}
 		System.out.println((new Date().getTime() - t1));
 	}

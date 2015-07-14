@@ -13,14 +13,12 @@ import java.util.concurrent.CountDownLatch;
  * @date 2015年4月10日 下午4:18:35
  */
 public class AsyncTimeServerHandler implements Runnable {
-	private int port;
 
 	CountDownLatch latch;
 
 	AsynchronousServerSocketChannel asynchronousServerSocketChannel;
 
 	public AsyncTimeServerHandler(int port) {
-		this.port = port;
 		try {
 			asynchronousServerSocketChannel = AsynchronousServerSocketChannel.open();
 			asynchronousServerSocketChannel.bind(new InetSocketAddress(port));
