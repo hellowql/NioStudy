@@ -13,5 +13,9 @@ public class TimeServerTest {
 		int port = 8080;
 		new Thread(new AsyncTimeServerHandler(port), "AIO-AsyncTimeServerHandler-001").start();
 		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-001").start();
+		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-002").start();
+		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-003").start();
+		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-004").start();
+		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-005").start();
 	}
 }
