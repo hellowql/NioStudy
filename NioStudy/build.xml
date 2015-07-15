@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<project name="NioStudy" default="nettyhttpxml" basedir="..">
+	<target name="nettyhttpxml">
+		<echo message="Running BindGen tool" />
+		<java classname="org.jibx.binding.BindingGenerator">
+			<arg value="com.wql.nettyhttpxml.Order" />
+		</java>
+	</target>
+</project>

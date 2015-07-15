@@ -18,11 +18,11 @@ import io.netty.handler.stream.ChunkedWriteHandler;
 public class HttpFileServer {
 	private static final String DEFAULT_URL = "/src/com/wql/";
 
+	// http://localhost:8080/src/com/wql/
 	public static void main(String[] args) {
 		if (null == args || args.length != 2)
 			args = new String[] { "8000", DEFAULT_URL };
 		new HttpFileServer().run(Integer.parseInt(args[0]), args[1]);
-
 	}
 
 	public void run(final int port, final String url) {
