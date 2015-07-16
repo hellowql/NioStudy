@@ -1,4 +1,4 @@
-package com.wql.nettyhttpxml;
+package com.wql.nettyhttpxml.base;
 
 import java.util.List;
 

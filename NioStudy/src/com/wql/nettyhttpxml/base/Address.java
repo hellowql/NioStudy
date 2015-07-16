@@ -1,4 +1,4 @@
-package com.wql.nettyhttpxml;
+package com.wql.nettyhttpxml.base;
 
 /**
  * @author wuqinglong
@@ -64,6 +64,11 @@ public class Address {
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [street1=" + street1 + ", street2=" + street2 + ", city=" + city + ", state=" + state + ", postCode=" + postCode + ", country=" + country + "]";
 	}
 
 }

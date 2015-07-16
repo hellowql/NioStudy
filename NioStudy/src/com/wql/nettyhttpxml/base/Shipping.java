@@ -1,4 +1,4 @@
-package com.wql.nettyhttpxml;
+package com.wql.nettyhttpxml.base;
 
 /**
  * @author wuqinglong

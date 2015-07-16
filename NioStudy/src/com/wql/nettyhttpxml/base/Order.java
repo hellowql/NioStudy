@@ -1,4 +1,4 @@
-package com.wql.nettyhttpxml;
+package com.wql.nettyhttpxml.base;
 
 /**
  * @author wuqinglong
@@ -64,6 +64,11 @@ public class Order {
 
 	public void setShipping(Shipping shipping) {
 		this.shipping = shipping;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [orderNumber=" + orderNumber + ", customer=" + customer + ", billTo=" + billTo + ", shipTo=" + shipTo + ", total=" + total + ", shipping=" + shipping + "]";
 	}
 
 }

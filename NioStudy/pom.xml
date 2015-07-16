@@ -5,6 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>NioStudy</name>
   <description>NioStudy</description>
+  <properties>
+    <jibx.version>1.2.6</jibx.version>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -21,29 +24,19 @@
   </build>
   <dependencies>
     <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+    </dependency>
+    <dependency>
       <groupId>io.netty</groupId>
       <artifactId>netty-all</artifactId>
       <version>5.0.0.Alpha2</version>
     </dependency>
     <dependency>
-      <groupId>org.jibx</groupId>
-      <artifactId>jibx-bind</artifactId>
-      <version>1.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jibx</groupId>
-      <artifactId>jibx-run</artifactId>
-      <version>1.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jibx</groupId>
-      <artifactId>jibx-extras</artifactId>
-      <version>1.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jibx</groupId>
-      <artifactId>jibx-schema</artifactId>
-      <version>1.2.6</version>
+      <groupId>xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.2.2</version>
     </dependency>
   </dependencies>
 </project>
