@@ -70,7 +70,6 @@ public class HttpXmlServer {
 							ChannelFuture future = ctx.writeAndFlush(new HttpXmlResponse(null, order));
 							if (!HttpHeaderUtil.isKeepAlive(request)) {
 								future.addListener(new GenericFutureListener<Future<? super Void>>() {
-									@Override
 									public void operationComplete(Future<? super Void> future) throws Exception {
 										ctx.close();
 									}
