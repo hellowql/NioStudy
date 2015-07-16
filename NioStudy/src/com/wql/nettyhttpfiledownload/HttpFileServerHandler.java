@@ -1,4 +1,4 @@
-package com.wql.nettyhttp;
+package com.wql.nettyhttpfiledownload;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

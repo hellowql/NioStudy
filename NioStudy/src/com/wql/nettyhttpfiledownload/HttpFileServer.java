@@ -1,4 +1,4 @@
-package com.wql.nettyhttp;
+package com.wql.nettyhttpfiledownload;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
@@ -18,7 +18,7 @@ import io.netty.handler.stream.ChunkedWriteHandler;
 public class HttpFileServer {
 	private static final String DEFAULT_URL = "/src/com/wql/";
 
-	// http://localhost:8080/src/com/wql/
+	// http://localhost:8000/src/com/wql/
 	public static void main(String[] args) {
 		if (null == args || args.length != 2)
 			args = new String[] { "8000", DEFAULT_URL };

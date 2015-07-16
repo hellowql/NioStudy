@@ -10,7 +10,7 @@ public class TimeServerTest {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int port = 8080;
+		int port = 8000;
 		new Thread(new AsyncTimeServerHandler(port), "AIO-AsyncTimeServerHandler-001").start();
 		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-001").start();
 		new Thread(new AsyncTimeClientHandler("localhost", port), "AIO-AsyncTimeClientHandler-002").start();

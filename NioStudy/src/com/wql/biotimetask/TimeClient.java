@@ -17,7 +17,7 @@ public class TimeClient {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int port = 8080;
+		int port = 8000;
 		Socket socket = null;
 		BufferedReader in = null;
 		PrintWriter out = null;

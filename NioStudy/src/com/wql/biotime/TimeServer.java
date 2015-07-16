@@ -14,7 +14,7 @@ import java.util.Date;
  */
 public class TimeServer {
 	public static void main(String[] args) {
-		int port = 8080;
+		int port = 8000;
 		ServerSocket server = null;
 		try {
 			server = new ServerSocket(port);

@@ -6,7 +6,7 @@ package com.wql.niotime;
  */
 public class TimeTest {
 	public static void main(String[] args) {
-		int port = 8080;
+		int port = 8000;
 		new Thread(new MultiplexerTimeServe(port), "NIO-MultiplexerTimeServer-001").start();
 		new Thread(new TimeClientHandle("localhost", port), "TimeClient-001").start();
 	}
