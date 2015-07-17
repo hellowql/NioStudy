@@ -3,7 +3,12 @@ package com.wql.customeprotocol.base;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Header {
+/**
+ * @author wuqinglong
+ * @date 2015年7月17日 下午5:24:41
+ */
+public final class Header {
+
 	private int crcCode = 0xabef0101;
 
 	private int length;
@@ -64,7 +69,9 @@ public class Header {
 		this.attachment = attachment;
 	}
 
+	@Override
 	public String toString() {
 		return "Header [crcCode=" + crcCode + ", length=" + length + ", sessionID=" + sessionID + ", type=" + type + ", priority=" + priority + ", attachment=" + attachment + "]";
 	}
+
 }

@@ -1,6 +1,11 @@
 package com.wql.customeprotocol.base;
 
-public class NettyMessage {
+/**
+ * @author wuqinglong
+ * @date 2015年7月17日 下午5:24:15
+ */
+public final class NettyMessage {
+
 	private Header header;
 
 	private Object body;
@@ -21,7 +26,8 @@ public class NettyMessage {
 		this.body = body;
 	}
 
+	@Override
 	public String toString() {
-		return "NettyMessage [header=" + header + "]";
+		return "NettyMessage [header=" + header + ", body=" + body + "]";
 	}
 }
