@@ -8,9 +8,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.timeout.ReadTimeoutHandler;
 
-import com.wql.customeprotocol.base.HeartBeatRespHandler;
 import com.wql.customeprotocol.base.LoginAuthRespHandler;
 import com.wql.customeprotocol.base.NettyMessageDecoder;
 import com.wql.customeprotocol.base.NettyMessageEncoder;
@@ -46,9 +44,7 @@ public class NettyServer {
 		protected void initChannel(SocketChannel ch) throws Exception {
 			ch.pipeline().addLast(new NettyMessageDecoder(1024 * 1024, 4, 4, -8, 0));
 			ch.pipeline().addLast(new NettyMessageEncoder());
-			ch.pipeline().addLast(new ReadTimeoutHandler(50));
 			ch.pipeline().addLast(new LoginAuthRespHandler());
-			ch.pipeline().addLast(new HeartBeatRespHandler());
 		}
 	}
 }
